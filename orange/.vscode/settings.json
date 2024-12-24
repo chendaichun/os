@@ -1,0 +1,6 @@
+{
+    "makefile.configureOnOpen": true,
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}"
+    ]
+}

@@ -1,0 +1,37 @@
+
+./build/boot_all.elf:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+00007c00 <_start>:
+    7c00:	b8 00 00 8e d8       	mov    $0xd88e0000,%eax
+    7c05:	8e d0                	mov    %eax,%ss
+    7c07:	8e c0                	mov    %eax,%es
+    7c09:	8e e0                	mov    %eax,%fs
+    7c0b:	8e e8                	mov    %eax,%gs
+    7c0d:	bc 00 7c b4 0e       	mov    $0xeb47c00,%esp
+    7c12:	b0 42                	mov    $0x42,%al
+    7c14:	cd 10                	int    $0x10
+
+00007c16 <read_loader>:
+    7c16:	bb 00 7e b9 02       	mov    $0x2b97e00,%ebx
+    7c1b:	00 b4 02 b0 63 ba 80 	add    %dh,-0x7f459c50(%edx,%eax,1)
+    7c22:	00 cd                	add    %cl,%ch
+    7c24:	13 72 ef             	adc    -0x11(%edx),%esi
+    7c27:	e9 d6 01 00 00       	jmp    7e02 <entry_loader+0x2>
+	...
+    7dfc:	00 00                	add    %al,(%eax)
+    7dfe:	55                   	push   %ebp
+    7dff:	aa                   	stos   %al,%es:(%edi)
+
+00007e00 <entry_loader>:
+    7e00:	66 55                	push   %bp
+    7e02:	66 89 e5             	mov    %sp,%bp
+    7e05:	66 83 ec 08          	sub    $0x8,%sp
+    7e09:	66 b8 00 80          	mov    $0x8000,%ax
+    7e0d:	00 00                	add    %al,(%eax)
+    7e0f:	66 ff d0             	call   *%ax
+    7e12:	90                   	nop
+    7e13:	66 c9                	leavew
+    7e15:	66 c3                	retw
