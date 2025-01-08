@@ -14,7 +14,7 @@ _start:
     jmp $8, $protect_mode_entry
 
 .code32
-.extern die
+.extern load_kernel
 protect_mode_entry:
     mov $16, %ax		// 16为数据段选择子
 	mov %ax, %ds
@@ -22,4 +22,4 @@ protect_mode_entry:
     mov %ax, %es
     mov %ax, %fs
     mov %ax, %gs
-    jmp die
+    jmp $8, $load_kernel

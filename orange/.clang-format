@@ -1,0 +1,22 @@
+# 使用 LLVM 风格作为基准（你也可以选择其他风格）
+BasedOnStyle: LLVM
+
+# 强制使用 Tab 字符进行缩进
+UseTab: Always
+
+# 设置 Tab 的宽度为 4 个空格
+IndentWidth: 4 
+TabWidth: 4
+AllowShortBlocksOnASingleLine: false
+BraceWrapping:
+  AfterFunction: true
+  AfterStruct: true
+  AfterClass: true
+  AfterEnum: true
+  BeforeElse: true
+  AfterControlStatement: true
+
+
+
+# 控制函数参数和返回值类型的空格风格
+SpacesInParentheses: false

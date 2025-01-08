@@ -1,0 +1,25 @@
+
+./build/kernel_init.elf:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+00100000 <_start>:
+  100000:	55                   	push   %ebp
+  100001:	89 e5                	mov    %esp,%ebp
+  100003:	8b 45 08             	mov    0x8(%ebp),%eax
+  100006:	50                   	push   %eax
+  100007:	e8 02 00 00 00       	call   10000e <kernel_init>
+  10000c:	eb fe                	jmp    10000c <_start+0xc>
+
+0010000e <kernel_init>:
+  10000e:	55                   	push   %ebp
+  10000f:	89 e5                	mov    %esp,%ebp
+  100011:	83 ec 10             	sub    $0x10,%esp
+  100014:	8b 45 08             	mov    0x8(%ebp),%eax
+  100017:	c7 40 50 64 00 00 00 	movl   $0x64,0x50(%eax)
+  10001e:	c7 45 fc 01 00 00 00 	movl   $0x1,-0x4(%ebp)
+  100025:	83 45 fc 01          	addl   $0x1,-0x4(%ebp)
+  100029:	90                   	nop
+  10002a:	c9                   	leave
+  10002b:	c3                   	ret

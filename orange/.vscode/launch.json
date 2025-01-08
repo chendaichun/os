@@ -56,6 +56,11 @@
                     "description": "加载load符号文件",
                     "text": "add-symbol-file ./build/load_all.elf 0x8000",
                     "ignoreFailures": false
+                },
+                {
+                    "description": "加载kernel_init符号文件",
+                    "text": "add-symbol-file ./build/kernel_init.elf 0x100000",
+                    "ignoreFailures": false
                 }
             ],
         }
