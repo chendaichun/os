@@ -1,6 +1,4 @@
-TOOL_PREFIX = x86_64-elf-
-CFLAGS = -g -c -O0 -m32 -fno-pie -fno-stack-protector -nostdlib -nostdinc -I./inlcude 
-
+include makefile.head
 boot:
 	$(TOOL_PREFIX)gcc $(CFLAGS) ./src/boot/boot.S -o ./build/boot.o
 	$(TOOL_PREFIX)gcc $(CFLAGS) ./src/boot/boot.c -o ./build/bootc.o

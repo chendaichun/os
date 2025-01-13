@@ -1,0 +1,14 @@
+# 检测操作系统类型
+OS := $(shell uname)
+
+# 根据操作系统设置工具链前缀
+ifeq ($(OS),Darwin)
+    # macOS
+    TOOL_PREFIX = x86_64-elf-
+else
+    # Linux
+    TOOL_PREFIX = i686-linux-gnu-
+endif
+
+# 通用编译选项
+CFLAGS = -g -c -O0 -m32 -fno-pie -fno-stack-protector -nostdlib -nostdinc -I./include

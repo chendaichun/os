@@ -16,7 +16,7 @@ _start:
 .code32
 .extern load_kernel
 protect_mode_entry:
-    mov $16, %ax		// 16为数据段选择子
+    mov $0x10, %ax		// 16为数据段选择子
 	mov %ax, %ds
     mov %ax, %ss
     mov %ax, %es

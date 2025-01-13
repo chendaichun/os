@@ -1,0 +1,135 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/i686-linux-gnu-gcc",
+      "-g",
+      "-c",
+      "-O0",
+      "-m32",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-nostdinc",
+      "-I./include",
+      "-o",
+      "./build/boot.o",
+      "./src/boot/boot.S"
+    ],
+    "directory": "/home/dyl/vscode/os/orange",
+    "file": "/home/dyl/vscode/os/orange/src/boot/boot.S",
+    "output": "/home/dyl/vscode/os/orange/build/boot.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/i686-linux-gnu-gcc",
+      "-g",
+      "-c",
+      "-O0",
+      "-m32",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-nostdinc",
+      "-I./include",
+      "-o",
+      "./build/bootc.o",
+      "./src/boot/boot.c"
+    ],
+    "directory": "/home/dyl/vscode/os/orange",
+    "file": "/home/dyl/vscode/os/orange/src/boot/boot.c",
+    "output": "/home/dyl/vscode/os/orange/build/bootc.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/i686-linux-gnu-gcc",
+      "-g",
+      "-c",
+      "-O0",
+      "-m32",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-nostdinc",
+      "-I./include",
+      "-o",
+      "./build/load.o",
+      "./src/loader/loader.S"
+    ],
+    "directory": "/home/dyl/vscode/os/orange",
+    "file": "/home/dyl/vscode/os/orange/src/loader/loader.S",
+    "output": "/home/dyl/vscode/os/orange/build/load.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/i686-linux-gnu-gcc",
+      "-g",
+      "-c",
+      "-O0",
+      "-m32",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-nostdinc",
+      "-I./include",
+      "-o",
+      "./build/load16.o",
+      "./src/loader/load16.c"
+    ],
+    "directory": "/home/dyl/vscode/os/orange",
+    "file": "/home/dyl/vscode/os/orange/src/loader/load16.c",
+    "output": "/home/dyl/vscode/os/orange/build/load16.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/i686-linux-gnu-gcc",
+      "-g",
+      "-c",
+      "-O0",
+      "-m32",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-nostdinc",
+      "-I./include",
+      "-o",
+      "./build/load32.o",
+      "./src/loader/load32.c"
+    ],
+    "directory": "/home/dyl/vscode/os/orange",
+    "file": "/home/dyl/vscode/os/orange/src/loader/load32.c",
+    "output": "/home/dyl/vscode/os/orange/build/load32.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/i686-linux-gnu-gcc",
+      "-g",
+      "-c",
+      "-O0",
+      "-m32",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-nostdinc",
+      "-I./include",
+      "-o",
+      "./build/kernel_init.o",
+      "./src/kernel/init/start.S"
+    ],
+    "directory": "/home/dyl/vscode/os/orange",
+    "file": "/home/dyl/vscode/os/orange/src/kernel/init/start.S",
+    "output": "/home/dyl/vscode/os/orange/build/kernel_init.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/i686-linux-gnu-gcc",
+      "-g",
+      "-c",
+      "-O0",
+      "-m32",
+      "-fno-pie",
+      "-fno-stack-protector",
+      "-nostdinc",
+      "-I./include",
+      "-o",
+      "./build/kernel_init_c.o",
+      "./src/kernel/init/start.c"
+    ],
+    "directory": "/home/dyl/vscode/os/orange",
+    "file": "/home/dyl/vscode/os/orange/src/kernel/init/start.c",
+    "output": "/home/dyl/vscode/os/orange/build/kernel_init_c.o"
+  }
+]

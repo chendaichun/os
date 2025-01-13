@@ -33,5 +33,5 @@ Disassembly of section .text:
     7e0d:	00 00                	add    %al,(%eax)
     7e0f:	66 ff d0             	call   *%ax
     7e12:	90                   	nop
-    7e13:	66 c9                	leavew
-    7e15:	66 c3                	retw
+    7e13:	66 c9                	leavew 
+    7e15:	66 c3                	retw   

@@ -2,5 +2,10 @@
     "makefile.configureOnOpen": true,
     "clangd.arguments": [
         "--compile-commands-dir=${workspaceFolder}"
-    ]
+    ],
+    "files.associations": {
+        "console.h": "c",
+        "type.h": "c",
+        "bootinfo.h": "c"
+    }
 }

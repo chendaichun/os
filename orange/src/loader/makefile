@@ -1,6 +1,4 @@
-TOOL_PREFIX = x86_64-elf-
-CFLAGS = -g -c -O0 -m32 -fno-pie -fno-stack-protector -nostdlib -nostdinc -I./inlcude 
-
+include makefile.head
 loader:
 	$(TOOL_PREFIX)gcc $(CFLAGS) ./src/loader/loader.S -o ./build/load.o 
 	$(TOOL_PREFIX)gcc $(CFLAGS) ./src/loader/load16.c -o ./build/load16.o 
